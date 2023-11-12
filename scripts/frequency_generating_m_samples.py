@@ -33,7 +33,6 @@ def main():
     logger.log("\nargs_target: ", args_target)
     logger.log("\nstarting to synthesis data.")
 
-
     time_start = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     logger.log("time_start:", time_start)
 
@@ -63,8 +62,7 @@ def main():
         deterministic=True
     )
     lens = len(os.listdir(args.data_dir))
-    # define amount (m) of middle images
-    amount = 20
+    amount = args.amount
 
     for k, (source, extra) in enumerate(data):
 
@@ -180,6 +178,7 @@ def create_argparser(type=None):
         data_dir=r"",  # Assign the source data path
         image_size=256,
         batch_size=1,
+        amount=10,
     )
     defaults.update(model_and_diffusion_defaults())
 
