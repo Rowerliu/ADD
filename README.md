@@ -1,8 +1,8 @@
 # ADBD
 
-**Overcoming Pathology Image Data Deficiency: Generating Images from Pathological Transformation Process**()<br/>
+**Overcoming Pathology Image Data Deficiency: Generating Images from Pathological Transformation Process**<br/>
 [Zeyu Liu](https://github.com/Rowerliu), Yufang He, Yu Zhao, Yunlu Feng, Guanglei Zhang<br/>
-[GitHub](https://github.com/suxuann/ddib)
+[Arxiv](https://arxiv.org/abs/2311.12316), [GitHub](https://github.com/suxuann/ddib)
 
 <img src="assets/ADBD.png" height="300" />
 
@@ -24,7 +24,8 @@ for overcoming pathological image data deficiency and supportable for further pa
 
 ### Generating a sequence of intermediate images between source domain and target domain
 1. Train a diffusion model on your data based on the [guided-diffusion](https://github.com/openai/guided-diffusion)<br/>
-2. Assign the path of trained models, and then generate intermediate images<br/>
+2. Assign the path of trained models, and then generate intermediate images
+(The total diffusion process includes 1000 steps, and we can get 10 intermediate images)<br/>
 `python scripts/frequency_generating_m_samples.py --diffusion_steps=1000 --amount=10`
 
 ## Acknowledgements
