@@ -1,24 +1,24 @@
-# ADBD
+# ADD
 
-**Overcoming Pathology Image Data Deficiency: Generating Images from Pathological Transformation Process**<br/>
-[Zeyu Liu](https://github.com/Rowerliu), Yufang He, Yu Zhao, Yunlu Feng, Guanglei Zhang<br/>
-[Arxiv](https://arxiv.org/abs/2311.12316), [GitHub](https://github.com/suxuann/ddib)
+**Generating Progressive Images from Pathological Transitions via Diffusion Model**<br/>
+[Zeyu Liu](https://github.com/Rowerliu), Tianyi Zhang, Yufang He, Yu Zhao, Yunlu Feng, Guanglei Zhang<br/>
+[Arxiv](https://arxiv.org/abs/2311.12316), [GitHub](https://github.com/Rowerliu/ADD)
 
 <img src="assets/ADBD.png" height="300" />
 
 ## Overview
-Histopathology serves as the gold standard for medical diagnosis but faces application limitations 
-due to the shortage of medical resources. Leveraging deep learning, computer-aided diagnosis 
-has the potential to alleviate the pathologist scarcity and provide timely clinical analysis. 
-However, developing a reliable model generally necessitates substantial data for training, 
-which is challenging in pathological field. In response, we propose an adaptive depth-controlled 
-bidirectional diffusion (ADBD) network for image data generation. The domain migration approach 
-can work with small trainset and overcome the diffusion overfitting by source information guidance. 
-Specifically, we developed a hybrid attention strategy to blend global and local attention priorities, 
-which guides the bidirectional diffusion and ensures the migration success. In addition, we developed 
-the adaptive depth-controlled strategy to simulate physiological transformations, capable of 
-yielding unlimited cross-domain intermediate images with corresponding soft labels. ADBD is effective 
-for overcoming pathological image data deficiency and supportable for further pathology-related research.
+Deep learning is widely applied in computer-aided pathological diagnosis, which alleviates the pathologist workload 
+and provide timely clinical analy-sis. However, most models generally require large-scale annotated data for training, 
+which faces challenges due to the sampling and annotation scarcity in pathological images. The rapid developing 
+generative models shows po-tential to generate more training samples from recent studies. However, they also struggle in
+generalization diversity with limited training data, incapable of generating effective samples. Inspired by the 
+pathological transitions be-tween different stages, we propose an adaptive depth-controlled diffusion (ADD) network
+to generate pathological progressive images for effective da-ta augmentation. This novel approach roots in domain migration,
+where a hybrid attention strategy guides the bidirectional diffusion, blending local and global attention priorities. 
+With feature measuring, the adaptive depth-controlled strategy ensures the migration and maintains locational similarity 
+in simulating the pathological feature transition. Based on tiny training set (samples ≤ 500), the ADD yields cross-domain 
+progressive images with cor-responding soft-labels. Experiments on two datasets suggest significant im-provements in 
+generation diversity, and the effectiveness with generated progressive samples are highlighted in downstream classifications.
 
 ## Usage
 
