@@ -1,24 +1,23 @@
 # ADD
 
 **Generating Progressive Images from Pathological Transitions via Diffusion Model**<br/>
-[Zeyu Liu](https://github.com/Rowerliu), Tianyi Zhang, Yufang He, Yu Zhao, Yunlu Feng, Guanglei Zhang<br/>
+[Zeyu Liu](https://github.com/Rowerliu), [Tianyi Zhang](https://github.com/sagizty), Yufang He, Yu Zhao, Yunlu Feng, Guanglei Zhang<br/>
 [Arxiv](https://arxiv.org/abs/2311.12316), [GitHub](https://github.com/Rowerliu/ADD)
 
 <img src="assets/ADD.png" height="300" />
 
 ## 🗃️ Overview
-Deep learning is widely applied in computer-aided pathological diagnosis, which alleviates the pathologist workload 
-and provide timely clinical analysis. However, most models generally require large-scale annotated data for training, 
-which faces challenges due to the sampling and annotation scarcity in pathological images. The rapid developing 
-generative models shows potential to generate more training samples from recent studies. However, they also struggle in
-generalization diversity with limited training data, incapable of generating effective samples. Inspired by the 
-pathological transitions be-tween different stages, we propose an adaptive depth-controlled diffusion (ADD) network
-to generate pathological progressive images for effective da-ta augmentation. This novel approach roots in domain migration,
-where a hybrid attention strategy guides the bidirectional diffusion, blending local and global attention priorities. 
-With feature measuring, the adaptive depth-controlled strategy ensures the migration and maintains locational similarity 
-in simulating the pathological feature transition. Based on tiny training set (samples ≤ 500), the ADD yields cross-domain 
-progressive images with corresponding soft-labels. Experiments on two datasets suggest significant improvements in 
-generation diversity, and the effectiveness with generated progressive samples are highlighted in downstream classifications.
+Pathological image analysis is a crucial field in deep learning applications. However, training effective models demands
+large-scale annotated data, which faces challenges due to sampling and annotation scarcity. The rapid developing generative 
+models show potential to generate more training sam-ples in recent studies. However, they also struggle with generalization 
+diver-sity when limited training data is available, making them incapable of gener-ating effective samples. Inspired by 
+pathological transitions between differ-ent stages, we propose an adaptive depth-controlled diffusion (ADD) net-work for 
+effective data augmentation. This novel approach is rooted in do-main migration, where a hybrid attention strategy blends 
+local and global at-tention priorities. With feature measuring, the adaptive depth-controlled strategy guides the bidirectional 
+diffusion. It simulates pathological feature transition and maintains locational similarity. Based on a tiny training set 
+(samples ≤ 500), ADD yields cross-domain progressive images with corre-sponding soft labels. Experiments on two datasets 
+suggest significant im-provements in generation diversity, and the effectiveness of the generated progressive samples is 
+highlighted in downstream classification tasks.
 
 ## 🗃️ Usage
 
@@ -27,7 +26,7 @@ generation diversity, and the effectiveness with generated progressive samples a
 2. Assign the path of trained models, and then generate intermediate images
 (The total diffusion process includes 1000 steps, and we can get 10 intermediate images)<br/>
 ```bash
-python scripts/frequency_generating_m_samples.py --diffusion_steps=1000 --amount=10`
+python scripts/frequency_generating_m_samples.py --diffusion_steps=1000 --amount=10
 ```
 
 ## 🗃️ Acknowledgements
@@ -35,6 +34,9 @@ This implementation is based on / inspired by:<br/>
 [openai/guided-diffusion](https://github.com/openai/guided-diffusion)<br/>
 [openai/improved-diffusion](https://github.com/openai/improved-diffusion)<br/>
 [suxuann/ddib](https://github.com/suxuann/ddib)
+
+## 🗃️ Enviroments
+Same as IDDPM / ADM / DDIB
 
 ## 🗃️ Materials
 The comparison methods are listed here:
