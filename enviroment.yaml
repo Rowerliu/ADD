@@ -1,0 +1,43 @@
+name: add
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch=1.12.1
+  - cudatoolkit=11.3
+  - numpy=1.23.1
+  - scipy=1.9.1
+  - scikit-learn=1.2.2
+  - pillow
+  - opencv-python
+  - scikit-image
+  - imageio
+  - certifi
+  - setuptools
+  - wheel
+  - pip:
+      - denoising-diffusion-pytorch==0.28.0
+      - diffusers==0.4.1
+      - torchaudio==0.12.1+cu113
+      - torchvision==0.13.1+cu113
+      - accelerate==0.13.2
+      - safetensors==0.4.2
+      - transformers==4.22.2
+      - tokenizers==0.12.1
+      - huggingface-hub==0.10.0
+      - timm==0.9.16
+      - clip==0.2.0
+      - openai-clip==1.0.1
+      - einops==0.5.0
+      - ema-pytorch==0.0.10
+      - tqdm==4.64.1
+      - pyyaml==6.0
+      - matplotlib==3.6.1
+      - tensorboardx==2.6.2.2
+      - wandb==0.13.4
+      - opencv-python==4.6.0.66
+      - pytorch-fid==0.2.1
+      - pandas==2.2.2
+      - h5py==3.11.0

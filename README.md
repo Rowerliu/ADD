@@ -1,6 +1,7 @@
 # ADD
 
 **Generating Progressive Images from Pathological Transitions via Diffusion Model**<br/>
+(Accepted in [MICCAI2024](https://link.springer.com/chapter/10.1007/978-3-031-72120-5_29))
 [Zeyu Liu](https://github.com/Rowerliu), [Tianyi Zhang](https://github.com/sagizty), Yufang He, Yu Zhao, Yunlu Feng, Guanglei Zhang<br/>
 [Arxiv](https://arxiv.org/abs/2311.12316), [GitHub](https://github.com/Rowerliu/ADD)
 
@@ -26,7 +27,7 @@ highlighted in downstream classification tasks.
 2. Assign the path of trained models, and then generate intermediate images
 (The total diffusion process includes 1000 steps, and we can get 10 intermediate images)<br/>
 ```bash
-python scripts/frequency_generating_m_samples.py --diffusion_steps=1000 --amount=10
+python main.py --diffusion_steps=1000 --amount=10
 ```
 
 ## 🗃️ Acknowledgements
@@ -36,7 +37,13 @@ This implementation is based on / inspired by:<br/>
 [suxuann/ddib](https://github.com/suxuann/ddib)
 
 ## 🗃️ Enviroments
-Same as IDDPM / ADM / DDIB
+A suitable [conda](https://conda.io/) environment named `add` can be created
+and activated with:
+
+```
+conda env create -f environment.yaml
+conda activate add
+```
 
 ## 🗃️ Materials
 The comparison methods are listed here:
