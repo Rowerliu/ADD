@@ -1,8 +1,8 @@
 # ADD
 
 **Generating Progressive Images from Pathological Transitions via Diffusion Model**<br/>
-(Accepted in [MICCAI2024](https://link.springer.com/chapter/10.1007/978-3-031-72120-5_29))
-[Zeyu Liu](https://github.com/Rowerliu), [Tianyi Zhang](https://github.com/sagizty), Yufang He, Yu Zhao, Yunlu Feng, Guanglei Zhang<br/>
+(Accepted in [MICCAI2024](https://link.springer.com/chapter/10.1007/978-3-031-72120-5_29))<br/>
+[Zeyu Liu](https://github.com/Rowerliu), [Tianyi Zhang](https://github.com/sagizty), Yufang He, Guanglei Zhang<br/>
 [Arxiv](https://arxiv.org/abs/2311.12316), [GitHub](https://github.com/Rowerliu/ADD)
 
 <img src="assets/ADD.png" height="300" />
