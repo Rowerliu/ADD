@@ -1,13 +1,13 @@
 # ADD
 
 **Generating Progressive Images from Pathological Transitions via Diffusion Model**<br/>
-(Accepted in [MICCAI2024](https://link.springer.com/chapter/10.1007/978-3-031-72120-5_29))<br/>
+(📎 Accepted in [MICCAI2024](https://link.springer.com/chapter/10.1007/978-3-031-72120-5_29))<br/>
 [Zeyu Liu](https://github.com/Rowerliu), [Tianyi Zhang](https://github.com/sagizty), Yufang He, Guanglei Zhang<br/>
-[Arxiv](https://arxiv.org/abs/2311.12316), [GitHub](https://github.com/Rowerliu/ADD)
+[GitHub](https://github.com/Rowerliu/ADD)
 
 <img src="assets/ADD.png" height="300" />
 
-## 🗃️ Overview
+## 📇 Overview
 Pathological image analysis is a crucial field in deep learning applications. However, training effective models demands
 large-scale annotated data, which faces challenges due to sampling and annotation scarcity. The rapid developing generative 
 models show potential to generate more training sam-ples in recent studies. However, they also struggle with generalization 
@@ -30,13 +30,13 @@ highlighted in downstream classification tasks.
 python main.py --diffusion_steps=1000 --amount=10
 ```
 
-## 🗃️ Acknowledgements
+## 📍 Acknowledgements
 This implementation is based on / inspired by:<br/>
 [openai/guided-diffusion](https://github.com/openai/guided-diffusion)<br/>
 [openai/improved-diffusion](https://github.com/openai/improved-diffusion)<br/>
 [suxuann/ddib](https://github.com/suxuann/ddib)
 
-## 🗃️ Enviroments
+## 🗄️ Enviroments
 A suitable [conda](https://conda.io/) environment named `add` can be created
 and activated with:
 
@@ -45,7 +45,7 @@ conda env create -f environment.yaml
 conda activate add
 ```
 
-## 🗃️ Materials
+## 📎 Materials
 The comparison methods are listed here:
 
 
